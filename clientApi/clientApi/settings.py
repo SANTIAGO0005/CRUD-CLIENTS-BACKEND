@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-f!mn$2qjug&0f!1h#+s^t$tp*m1gf+4jr1pqyuc87on03jj2ps
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','https://crud-clients-frontend.vercel.app/']
 
 
 # Application definition
@@ -143,6 +143,8 @@ API_DESCRIPTION = 'API for managing clients'
 
 CORS_ALLOWED_ORIGINS = [
     'http://*',
+    'https://crud-clients-frontend.vercel.app/'
+    'http://client-api-five.vercel.app/',
     'http://localhost:3000',
     'http://192.168.100.63:3000'
 ]

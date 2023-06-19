@@ -145,8 +145,7 @@ API_TITLE = 'Clients'
 API_DESCRIPTION = 'API for managing clients'
 
 CORS_ALLOWED_ORIGINS = [
-    'http://*',
-    'https://crud-clients-frontend.vercel.app/'
+    'https://crud-clients-frontend.vercel.app',
     'http://client-api-five.vercel.app/',
     'http://localhost:3000',
     'http://192.168.100.63:3000'

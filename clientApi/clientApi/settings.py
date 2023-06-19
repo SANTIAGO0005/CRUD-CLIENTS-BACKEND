@@ -144,12 +144,18 @@ SWAGGER_SETTINGS = {
 API_TITLE = 'Clients'
 API_DESCRIPTION = 'API for managing clients'
 
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     'https://crud-clients-frontend.vercel.app',
     'http://client-api-five.vercel.app/',
     'http://localhost:3000',
     'http://192.168.100.63:3000'
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://crud-clients-frontend.vercel.app',
+]
+
 CORS_ALLOW_METHODS = (
     "DELETE",
     "GET",

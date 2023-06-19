@@ -1,4 +1,5 @@
 echo "BUILD START"
+winget install postqresql
 python3.9 pip install pipwin
 python3.9 pipwin install psycopg2==2.9.6
 python3.9 -m pip install -r requirements.txt

@@ -1,6 +1,7 @@
 asgiref==3.4.1
 certifi==2022.6.15
 charset-normalizer==2.1.0
+coreapi==2.3.3
 coreschema==0.0.4
 decouple==0.0.7
 dj-database-url==1.2.0
@@ -17,7 +18,13 @@ itypes==1.2.0
 Jinja2==3.1.2
 MarkupSafe==2.1.1
 mysql-connector-python==8.0.32
+packaging==21.3
+Pillow==8.2.0
 postgres==4.0
+protobuf==3.20.3
+psycopg2==2.9.6
+pyparsing==3.0.9
+python-dotenv==0.21.1
 pytz==2021.1
 requests==2.28.1
 ruamel.yaml==0.17.21
@@ -27,5 +34,7 @@ static3==0.7.0
 typing-extensions==3.10.0.0
 tzdata==2022.1
 Unipath==1.0
-uritemplate==4.1.
+uritemplate==4.1.0
+urllib3==1.26.11
+vboxapi==1.0
 whitenoise==6.3.0

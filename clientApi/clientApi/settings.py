@@ -123,8 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -149,9 +148,6 @@ API_DESCRIPTION = 'API for managing clients'
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ORIGIN_WHITELIST = (
-    'http://crud-clients-frontend-santiago0005.vercel.app'
-    'https://crud-clients-frontend.vercel.app',
-    'http://crud-clients-frontend-git-main-santiago0005.vercel.app'
 )
 CORS_ALLOWED_WHITELIST = (
     'https://crud-clients-frontend.vercel.app',

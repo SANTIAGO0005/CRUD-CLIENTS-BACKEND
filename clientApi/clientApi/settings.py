@@ -33,10 +33,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'corsheaders',
     'rest_framework',
     'clients',
-    'corsheaders',
+    
 
 ]
 
@@ -146,18 +146,16 @@ SWAGGER_SETTINGS = {
 API_TITLE = 'Clients'
 API_DESCRIPTION = 'API for managing clients'
 
-CORS_ORIGIN_WHITELIST = [
-    '*',
+CORS_ORIGIN_WHITELIST = (
     'https://crud-clients-frontend.vercel.app'
-]
-CORS_ALLOWED_WHITELIST = [
-    '*',
+)
+CORS_ALLOWED_WHITELIST = (
     'https://crud-clients-frontend.vercel.app',
     'http://client-api-five.vercel.app',
     'http://localhost:3000',
     'http://192.168.100.63:3000',
     'http://127.0.0.1:8000/'
-]
+)
 
 
 CORS_ALLOW_METHODS = (

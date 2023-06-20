@@ -141,6 +141,9 @@ SWAGGER_SETTINGS = {
 API_TITLE = 'Clients'
 API_DESCRIPTION = 'API for managing clients'
 
+CORS_ORIGIN_WHITELIST = [
+    'https://crud-clients-frontend.vercel.app'
+]
 CORS_ALLOWED_WHITELIST = [
     'https://crud-clients-frontend.vercel.app',
     'http://client-api-five.vercel.app',

@@ -4,8 +4,7 @@ from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-import dj_database_url
-from decouple import config
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -73,17 +72,17 @@ WSGI_APPLICATION = 'clientApi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'verceldb',
-#         'USER': 'default',
-#         'PASSWORD': 'dVSj2yWAeJu5',
-#         'HOST': 'ep-orange-hall-642063-pooler.us-east-1.postgres.vercel-storage.com',
-#         'PORT': '5432',
-#     }
-# }
-DATABASES['default'] = dj_database_url.config()
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'dVSj2yWAeJu5',
+        'HOST': 'ep-orange-hall-642063-pooler.us-east-1.postgres.vercel-storage.com',
+        'PORT': '5432',
+    }
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

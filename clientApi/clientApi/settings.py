@@ -147,7 +147,9 @@ API_TITLE = 'Clients'
 API_DESCRIPTION = 'API for managing clients'
 
 CORS_ORIGIN_WHITELIST = (
-    'https://crud-clients-frontend.vercel.app'
+    'http://crud-clients-frontend-santiago0005.vercel.app'
+    'https://crud-clients-frontend.vercel.app',
+    'http://crud-clients-frontend-git-main-santiago0005.vercel.app'
 )
 CORS_ALLOWED_WHITELIST = (
     'https://crud-clients-frontend.vercel.app',
